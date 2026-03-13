@@ -14,9 +14,9 @@ public class FileService : IFileService
 
     public FileService(IConfiguration configuration)
     {
-        // Use wwwroot/uploads natively inside the backend project
+        // For production: C:\inetpub\wwwroot\yasarkirtasiye.com\public\uploads
         _baseUploadPath = configuration["FileStorage:UploadDirectory"]
-                          ?? Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+                          ?? @"C:\inetpub\wwwroot\yasarkirtasiye.com\public\uploads";
     }
 
     public async Task<string> UploadFileAsync(IFormFile file, string subDirectory, CancellationToken cancellationToken = default)

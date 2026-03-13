@@ -58,7 +58,8 @@ public class ProductsController : ControllerBase
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Update(Guid id, [FromForm] UpdateProductCommand command)
     {
-        if (id != command.Id) return BadRequest();
+        if (command.Id == Guid.Empty) command.Id = id;
+        if (id != command.Id) return BadRequest(new { Message = "ID Uyuşmazlığı" });
         var result = await _mediator.Send(command);
         if (!result) return NotFound();
         return NoContent();

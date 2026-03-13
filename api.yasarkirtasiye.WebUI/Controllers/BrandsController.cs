@@ -49,7 +49,8 @@ public class BrandsController : ControllerBase
     [Authorize(Roles = "Admin")]
     public async Task<ActionResult<BrandDto>> Update(Guid id, [FromForm] UpdateBrandCommand command)
     {
-        if (id != command.Id) return BadRequest();
+        if (command.Id == Guid.Empty) command.Id = id;
+        if (id != command.Id) return BadRequest(new { Message = "ID Uyuşmazlığı" });
         var brand = await _mediator.Send(command);
         return Ok(brand);
     }

@@ -93,6 +93,8 @@ public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand,
             }
         }
 
+        var newUploadedPaths = new List<string>();
+
         // 2. Process New Images
         if (request.NewImages != null && request.NewImages.Any())
         {
@@ -102,6 +104,8 @@ public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand,
             foreach (var newImg in request.NewImages)
             {
                 var imagePath = await _fileService.UploadFileAsync(newImg, "products", cancellationToken);
+                newUploadedPaths.Add(imagePath);
+                
                 maxOrder++;
                 product.Images.Add(new ProductImage
                 {
@@ -111,8 +115,20 @@ public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand,
             }
         }
 
-        await _productRepository.UpdateAsync(product, cancellationToken);
-        await _unitOfWork.SaveChangesAsync(cancellationToken);
+        try 
+        {
+            await _productRepository.UpdateAsync(product, cancellationToken);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+        }
+        catch 
+        {
+            // Rollback newly uploaded files if DB save fails
+            foreach (var path in newUploadedPaths)
+            {
+                _fileService.DeleteFile(path);
+            }
+            throw;
+        }
 
         return true;
     }

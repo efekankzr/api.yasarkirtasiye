@@ -51,12 +51,16 @@ public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand,
             BoxQuantity = request.BoxQuantity
         };
 
+        var newUploadedPaths = new List<string>();
+
         if (request.Images != null && request.Images.Any())
         {
             var displayOrder = 1;
             foreach (var img in request.Images)
             {
                 var imagePath = await _fileService.UploadFileAsync(img, "products", cancellationToken);
+                newUploadedPaths.Add(imagePath);
+                
                 product.Images.Add(new ProductImage
                 {
                     ImagePath = imagePath,
@@ -65,8 +69,20 @@ public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand,
             }
         }
 
-        await _productRepository.AddAsync(product, cancellationToken);
-        await _unitOfWork.SaveChangesAsync(cancellationToken);
+        try 
+        {
+            await _productRepository.AddAsync(product, cancellationToken);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+        }
+        catch 
+        {
+            // Rollback uploaded files if DB save fails
+            foreach (var path in newUploadedPaths)
+            {
+                _fileService.DeleteFile(path);
+            }
+            throw;
+        }
 
         return new ProductDto
         {

@@ -69,9 +69,9 @@ public class FileService : IFileService
 
     private static void ValidateFile(long fileLength, string extension)
     {
-        const int maxFileSize = 2 * 1024 * 1024; // 2 MB
+        const int maxFileSize = 3 * 1024 * 1024; // 3 MB
         if (fileLength > maxFileSize)
-            throw new ArgumentException("Dosya boyutu 2MB'den büyük olamaz.");
+            throw new ArgumentException("Dosya boyutu 3MB'den büyük olamaz.");
 
         if (!AllowedExtensions.Contains(extension))
             throw new ArgumentException($"Geçersiz dosya türü. İzin verilen uzantılar: {string.Join(", ", AllowedExtensions)}");

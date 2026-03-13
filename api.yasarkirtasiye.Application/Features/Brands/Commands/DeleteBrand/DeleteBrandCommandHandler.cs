@@ -1,5 +1,6 @@
 using api.yasarkirtasiye.Application.Interfaces;
 using api.yasarkirtasiye.Application.Interfaces.Repositories;
+using api.yasarkirtasiye.Application.Interfaces.Services;
 using api.yasarkirtasiye.Domain.Entities;
 using MediatR;
 
@@ -9,11 +10,13 @@ public class DeleteBrandCommandHandler : IRequestHandler<DeleteBrandCommand, Uni
 {
     private readonly IRepository<Brand> _brandRepository;
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IFileService _fileService;
 
-    public DeleteBrandCommandHandler(IRepository<Brand> brandRepository, IUnitOfWork unitOfWork)
+    public DeleteBrandCommandHandler(IRepository<Brand> brandRepository, IUnitOfWork unitOfWork, IFileService fileService)
     {
         _brandRepository = brandRepository;
         _unitOfWork = unitOfWork;
+        _fileService = fileService;
     }
 
     public async Task<Unit> Handle(DeleteBrandCommand request, CancellationToken cancellationToken)
@@ -23,6 +26,11 @@ public class DeleteBrandCommandHandler : IRequestHandler<DeleteBrandCommand, Uni
         if (brand == null)
         {
             throw new Exception("Brand not found."); 
+        }
+
+        if (!string.IsNullOrEmpty(brand.ImageUrl))
+        {
+            _fileService.DeleteFile(brand.ImageUrl);
         }
 
         await _brandRepository.DeleteAsync(brand, cancellationToken);

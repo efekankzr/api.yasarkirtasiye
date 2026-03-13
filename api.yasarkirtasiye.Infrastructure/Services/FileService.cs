@@ -14,9 +14,9 @@ public class FileService : IFileService
 
     public FileService(IConfiguration configuration)
     {
-        // Default to a folder relative to the backend running directory, going up to the frontend folder
+        // Use wwwroot/uploads natively inside the backend project
         _baseUploadPath = configuration["FileStorage:UploadDirectory"]
-                          ?? Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "frontend", "public", "uploads");
+                          ?? Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
     }
 
     public async Task<string> UploadFileAsync(IFormFile file, string subDirectory, CancellationToken cancellationToken = default)

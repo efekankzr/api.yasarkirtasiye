@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="api.yasarkirtasiye.Application/api.yasarkirtasiye.Application.csproj" />
+  <Project Path="api.yasarkirtasiye.Domain/api.yasarkirtasiye.Domain.csproj" />
+  <Project Path="api.yasarkirtasiye.Infrastructure/api.yasarkirtasiye.Infrastructure.csproj" />
+  <Project Path="api.yasarkirtasiye.Persistance/api.yasarkirtasiye.Persistance.csproj" />
+  <Project Path="api.yasarkirtasiye.WebUI/api.yasarkirtasiye.WebUI.csproj" />
+</Solution>

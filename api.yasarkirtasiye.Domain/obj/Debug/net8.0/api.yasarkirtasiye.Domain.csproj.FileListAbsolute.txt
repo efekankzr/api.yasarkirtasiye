@@ -1,0 +1,13 @@
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Domain\bin\Debug\net8.0\api.yasarkirtasiye.Domain.deps.json
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Domain\bin\Debug\net8.0\api.yasarkirtasiye.Domain.dll
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Domain\bin\Debug\net8.0\api.yasarkirtasiye.Domain.pdb
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Domain\obj\Debug\net8.0\api.yasarkirtasiye.Domain.csproj.AssemblyReference.cache
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Domain\obj\Debug\net8.0\api.yasarkirtasiye.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Domain\obj\Debug\net8.0\api.yasarkirtasiye.Domain.AssemblyInfoInputs.cache
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Domain\obj\Debug\net8.0\api.yasarkirtasiye.Domain.AssemblyInfo.cs
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Domain\obj\Debug\net8.0\api.yasarkirtasiye.Domain.csproj.CoreCompileInputs.cache
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Domain\obj\Debug\net8.0\api.yasarkirtasiye.Domain.sourcelink.json
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Domain\obj\Debug\net8.0\api.yasarkirtasiye.Domain.dll
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Domain\obj\Debug\net8.0\refint\api.yasarkirtasiye.Domain.dll
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Domain\obj\Debug\net8.0\api.yasarkirtasiye.Domain.pdb
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Domain\obj\Debug\net8.0\ref\api.yasarkirtasiye.Domain.dll

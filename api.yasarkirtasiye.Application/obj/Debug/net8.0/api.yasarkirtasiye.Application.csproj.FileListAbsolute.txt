@@ -1,0 +1,16 @@
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\bin\Debug\net8.0\api.yasarkirtasiye.Application.deps.json
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\bin\Debug\net8.0\api.yasarkirtasiye.Application.dll
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\bin\Debug\net8.0\api.yasarkirtasiye.Application.pdb
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\bin\Debug\net8.0\api.yasarkirtasiye.Domain.dll
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\bin\Debug\net8.0\api.yasarkirtasiye.Domain.pdb
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\obj\Debug\net8.0\api.yasarkirtasiye.Application.csproj.AssemblyReference.cache
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\obj\Debug\net8.0\api.yasarkirtasiye.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\obj\Debug\net8.0\api.yasarkirtasiye.Application.AssemblyInfoInputs.cache
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\obj\Debug\net8.0\api.yasarkirtasiye.Application.AssemblyInfo.cs
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\obj\Debug\net8.0\api.yasarkirtasiye.Application.csproj.CoreCompileInputs.cache
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\obj\Debug\net8.0\api.yasarkirtasiye.Application.sourcelink.json
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\obj\Debug\net8.0\api.yasa.2AA1474E.Up2Date
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\obj\Debug\net8.0\api.yasarkirtasiye.Application.dll
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\obj\Debug\net8.0\refint\api.yasarkirtasiye.Application.dll
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\obj\Debug\net8.0\api.yasarkirtasiye.Application.pdb
+C:\Users\efe\Desktop\YasarKirtasiye\Backend\api.yasarkirtasiye.Application\obj\Debug\net8.0\ref\api.yasarkirtasiye.Application.dll

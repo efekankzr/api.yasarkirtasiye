@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aB1oh/dDRs4=",
+  "dgSpecHash": "v0G1ahCW58U=",
   "success": true,
   "projectFilePath": "C:\\Users\\efe\\Desktop\\YasarKirtasiye\\Backend\\api.yasarkirtasiye.Infrastructure\\api.yasarkirtasiye.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -40,22 +40,11 @@
     "C:\\Users\\efe\\.nuget\\packages\\microsoft.io.recyclablememorystream\\3.0.1\\microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512",
     "C:\\Users\\efe\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
     "C:\\Users\\efe\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\efe\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.0\\system.diagnostics.diagnosticsource.10.0.0.nupkg.sha512",
     "C:\\Users\\efe\\.nuget\\packages\\system.drawing.common\\8.0.4\\system.drawing.common.8.0.4.nupkg.sha512",
     "C:\\Users\\efe\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.0.0\\system.identitymodel.tokens.jwt.8.0.0.nupkg.sha512",
-    "C:\\Users\\efe\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512"
+    "C:\\Users\\efe\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
+    "C:\\Users\\efe\\.nuget\\packages\\system.text.encoding.codepages\\8.0.0\\system.text.encoding.codepages.8.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "message": "Package 'Microsoft.Extensions.Caching.Memory' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-qj66-m88j-hmgj",
-      "projectPath": "C:\\Users\\efe\\Desktop\\YasarKirtasiye\\Backend\\api.yasarkirtasiye.Infrastructure\\api.yasarkirtasiye.Infrastructure.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\efe\\Desktop\\YasarKirtasiye\\Backend\\api.yasarkirtasiye.Infrastructure\\api.yasarkirtasiye.Infrastructure.csproj",
-      "libraryId": "Microsoft.Extensions.Caching.Memory",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }
